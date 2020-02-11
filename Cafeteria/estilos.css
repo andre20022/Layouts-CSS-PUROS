@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* MENU DESKTOP*/
+#menu{
+    width: 100%;
+    padding: 5px;
+    background-color: darkgoldenrod;
+    position: fixed;
+    z-index: 1;
+}
+#img-logo{
+    width: 70px;
+    margin: 5px;
+    border-radius: 50px;
+}
+#lista-menu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+/* MENU MOBILE */
+#menu-mobile{
+    list-style: none;
+    margin-top: 120px;
+    text-align: center;
+    display: none;
+    transition: 10s all;
+}
+#menu-mobile > li{
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s ease-in;
+    font-weight: bolder;
+    color: white;
+}
+#menu-mobile > li:hover{
+    background-color: dimgrey;
+    transform: rotateZ(-2.4deg);
+}
+#lista-menu > li{
+    display: inline;
+    margin: 5px;
+    font-weight: bold;
+    padding: 8px;
+    color: white;
+}
+#lista-menu > li:hover{
+
+    background-color: red;
+    border-radius: 8px 20px;
+}
+input[type = checkbox]{
+
+    display: none;
+}
+/* LABEL DO MENU MOBILE*/
+#label-menu{
+    padding: 8px;
+    border: 2px solid black;
+    float: right;
+    font-weight: bolder;
+    color: white;
+    margin-top: 30px;
+    display: none;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+#label-menu:hover{
+    transform: scale(1.1);
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border: 2px solid white;
+}
+/* SECTION QUE CONTEM TODOS OS CARDS*/
+.conteudo{
+    width: 100%;
+    text-align: center;
+    background-color: #ccc;
+    position: relative;
+    height: auto;
+    padding: 10px;
+}
+.container-card{
+    
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.titulo-card{
+   font-weight: bold;
+   color: red;
+   font-family: sans-serif;
+   margin-bottom: 3px;
+   background-color: black;
+   padding: 5px;
+}
+.img-card{
+    width: 200px;
+    height: 150px;
+    margin-top: 8px;
+    padding: 20px;
+
+}
+.conteudo-card{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 3px;
+    background-color: #aaa;
+    border-radius: 0 0 10px 10px;
+}
+.titulo-secund-card{
+    font-weight: bold;
+    color: #eee;
+    font-family: sans-serif;
+    padding: 8px;
+}
+.text-card{
+    font-family: sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+.link-card{
+    width: 30%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    border: 2px solid #eee;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    display: block;
+    cursor: pointer;
+}
+.link-card:hover{
+    transition: 1s all;
+    background-color: black;
+    border: 2px solid red;
+    color: white;
+}
+#img-section{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url('img-cafe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.text{
+
+    margin: 120px auto;
+    font-family: serif;
+    font-weight: bold;
+    width: 70%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* REODA PÉ DO SITE */
+.footer{
+    width: 100%;
+    background-color: darkgoldenrod;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+
+}
+.text-footer{
+    font-weight: bold;
+    padding: 8px;
+    font-family: sans-serif;
+    color: white;
+}
+.list-footer{
+    list-style: none;
+    margin: 8px;
+}
+.link-footer{
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+    font-family: sans-serif;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+.link-footer-img{
+ display: inline-block;
+}
+.img-footer{
+    width: 50px;
+    height: 50px;
+}
+.link-footer:hover{
+    background-color: red;
+    border-radius: 8px 20px;
+}
+.link-author{
+    color: black;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 600px) {
+
+    #label-menu{
+
+        display: block;
+    }
+    input[type = checkbox]:checked  ~ #menu-mobile{
+
+        display: block;
+        transition: 2s all;
+
+    }
+      #lista-menu{
+        display: none;
+    }
+    .container-card{
+        width: 80%;
+    }
+    .link-card{
+        width: 40%;
+    }
+    .text{
+        
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+
+
+}
+@media screen and (min-width: 700px) {
+
+    .container-card{
+        width: 50%;
+    }
+    .link-card{
+        width: 40%;
+    }
+
+}
+@media screen and (min-width: 600px) {
+
+    .container-card{
+        width: 60%;
+    }
+    .link-card{
+        width: 40%;
+    }
+
+}
+@media screen and (min-width: 900px) {
+
+    .container-card{
+        width: 30%;
+    }
+
+}
+  
