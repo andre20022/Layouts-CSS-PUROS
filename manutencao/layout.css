@@ -72,9 +72,10 @@
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 15px;
-	display: none;
-	position: relative;
-	transition: 2.8s all;
+	position: absolute;
+	right: 700px;
+	z-index: 1;
+
 }
 #nav:hover{
 
@@ -91,7 +92,8 @@
 #nav #lista-nav .link-nav{
  
     padding: 8px;
-    font-weight: bold;
+	font-weight: bold;
+	font-family: cursive;
     border-left: 5px solid black;
     border-bottom: 1px solid black;
 
@@ -111,7 +113,8 @@
 }
 #check:checked ~ #nav{
  
- display: block;
+ transition: all 2.8s linear;
+ right: 0;
   
 }
 .ativa-nav{
@@ -128,7 +131,7 @@
 }
 .ativa-nav:hover{
 
-	background-color: # #004;
+	background-color: #004;
 }
 #conteudo{
 
@@ -160,7 +163,7 @@
 	color: #fff;
 	background-color: black;
 	margin-bottom: 4px;
-	font-family: sans-serif;
+	font-family: cursive;
 }
 #conteudo .card .line-card{
 
@@ -186,7 +189,7 @@
    margin: 10px;
    font-weight: bold;
    color: #fff;
-   font-family: sans-serif;
+   font-family: cursive;
 
 }
 #conteudo .card .link-card{
@@ -301,6 +304,7 @@
 
    list-style-type: none;
    padding: 8px;
+   width: 100%;
    text-align: center;
 
 }
@@ -360,7 +364,7 @@
 
    #conteudo .card{
 
-     	width: 30%;
+     	width: 40%;
      	margin:  0 auto;
      	margin-bottom: 20px;
 
@@ -373,27 +377,32 @@
  
 	  #nav{
 
-	  	display: block;
+		  display: block;
+		  right: 0;
+		  position: relative;
+	  }
+	  #nav #lista-nav{
+		  text-align: center; 
+		  margin: 0 auto;
+		  width: 70%;
+	  }
+	  #nav #lista-nav .link-nav{
+
+		border-bottom: none;
+		text-align: center;
+		display: inline-block;
 	  }
 	  .ativa-nav{
 
        display: none;
 	  }
-	  #nav #lista-nav{
-	  	text-align: center;
-	  }
-	  #nav #lista-nav .link-nav{
-	    display: inline-block;
-	    border: none;
-	    margin-right: 10px;
-	    font-family: cursive;
-     }
+	  
      #conteudo .card{
 
      	width: 30%;
      	margin-bottom: 20px;
 
-     }
+	 }
 
 }
 @media screen and (min-width: 820px){
@@ -415,5 +424,18 @@
    width: 50%;
 
  }
+ #footer-web .footer-list-1{
+		
+	float: left;
+	width: 50%;
+
+}
+#footer-web .footer-list-2{
+		
+   width: 50%;
+   float: right;
+
+}
+
 }
 
