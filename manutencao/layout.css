@@ -1,0 +1,441 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	
+}
+.container{
+
+   width: 100%;
+
+}
+#cabecalho{
+	width: 100%;
+	padding: 10px;
+	background-color: #599;
+	position: relative;
+	height: 100px;
+}
+#cabecalho #img-icon{
+
+  width: 72px; 
+  margin-left: 8px;
+  margin-top: 20px; 
+  position: absolute;
+  top: 0;
+
+}
+#cabecalho .texto-header{
+
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 1em;
+	color: #fff;
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	text-align: center;
+
+}
+#cabecalho .butao-header{
+
+	border: none;
+	position: absolute;
+	right: 25px;
+	top: 32px;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #593;
+	text-decoration: none;
+}
+#cabecalho .butao-header:hover{
+
+   cursor: pointer;
+   background-color: #fff;
+   color: #000;
+   transition: 1s all;
+   transform: scale(1.1);
+
+}
+.linha{
+
+    margin-top: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+    border: 1px solid #599;
+
+}
+#nav{
+
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	position: absolute;
+	right: 700px;
+	z-index: 1;
+
+}
+#nav:hover{
+
+	background-color: #599;
+}
+#nav #lista-nav{
+
+	list-style-type: none;
+	padding: 8px;
+	border: 1px solid #000;
+	border-radius: 5px;
+
+}
+#nav #lista-nav .link-nav{
+ 
+    padding: 8px;
+	font-weight: bold;
+	font-family: cursive;
+    border-left: 5px solid black;
+    border-bottom: 1px solid black;
+
+}
+#nav #lista-nav .link-nav:hover{
+
+	background-color: gray;
+	color: #fff;
+	border-left: 5px solid red;
+	transform: translateX(10px);
+
+}
+#check{
+  
+  display: none;
+
+}
+#check:checked ~ #nav{
+ 
+ transition: all 2.8s linear;
+ right: 0;
+  
+}
+.ativa-nav{
+    
+    width: 10%;
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin: 20px auto;
+	margin-bottom: 20px;
+	background-color: #599;
+
+}
+.ativa-nav:hover{
+
+	background-color: #004;
+}
+#conteudo{
+
+   width: 100%;
+   height: auto;
+   position: relative;
+   text-align: center;
+}
+#conteudo .card{
+
+   width: 55%;
+   text-align: center;
+   border-radius: 5px;
+   padding: 18px;
+   margin: 10px;
+   background-image: linear-gradient(to top left, red,blue);
+   box-shadow: 2px 2px 20px black;
+   min-width: 240px;
+   height: auto;
+}
+#conteudo .card:hover{
+
+	box-shadow: 0px 0px 20px 10px black;
+
+}
+#conteudo .card .title-card{
+
+	font-weight: bold;
+	color: #fff;
+	background-color: black;
+	margin-bottom: 4px;
+	font-family: cursive;
+}
+#conteudo .card .line-card{
+
+   border: 2px solid black;
+
+}
+#conteudo .card .img-card{
+
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+#conteudo .card .img-card:hover{
+
+ transform: scale(1.2);
+
+}
+#conteudo .card .text-card{
+
+   text-align: justify;
+   padding: 5px;
+   margin: 10px;
+   font-weight: bold;
+   color: #fff;
+   font-family: cursive;
+
+}
+#conteudo .card .link-card{
+
+   padding: 10px;
+   border: 2px solid #fff;
+   color: #fff;
+   margin-bottom: 10px;
+   border-radius: 5px 15px;
+   background-color: #000;
+
+
+}
+#conteudo .card .link-card:hover{
+
+	cursor: pointer;
+	border: 2px solid #000;
+	color: #000;
+	background-color: #fff;
+	transition: 0.7s all;
+	transform: scale(1.1);
+
+}
+#mensagem{
+
+	width: 100%;
+	position: relative;
+	padding: 5px;
+	background-color: #599;
+}
+#mensagem #titulo-msg{
+
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 5px;
+    
+}
+#mensagem .textarea-msg{
+
+	border-radius: 5px;
+	width: 70%;
+	display: block;
+	margin: 7px auto;
+	
+}
+#mensagem #formulario{
+
+    padding: 8px;
+    display: block;
+
+}
+ #mensagem #formulario .input-msg{
+
+ 	display: block;
+ 	padding: 7px;
+ 	border-radius: 5px;
+    width: 70%;
+    margin: 7px auto;
+
+ }
+#mensagem #formulario .label-msg{
+
+   font-weight: bold;
+   font-family: cursive;
+   color: #fff;
+
+}
+#mensagem #formulario .btn-msg{
+
+	border: 2px solid #fff;
+	border-radius: 5px 15px;
+	color: #fff;
+	padding: 10px;
+	margin-top: 5px;
+	background: black;
+	
+}
+#mensagem #formulario .btn-msg:hover{
+
+	cursor: pointer;
+	transition: 0.7s all;
+	border: 2px solid #000;
+	color: #000;
+	background: #fff;
+	transform: scale(1.1);
+
+}
+#footer-web{
+
+	width: 100%;
+	background-color: #533;
+
+}
+#footer-web .footer-list-1{
+
+   list-style-type: none;
+   padding: 8px;
+   text-align: center;
+
+}
+#footer-web .footer-list-2{
+
+   list-style-type: none;
+   padding: 8px;
+   text-align: center;
+
+}
+#footer-web .footer-list-3{
+
+   list-style-type: none;
+   padding: 8px;
+   width: 100%;
+   text-align: center;
+
+}
+#footer-web .footer-link{
+
+	color: #fff;
+	padding: 5px;
+
+}
+#footer-web .footer-link-redes{
+
+	display: inline-block;
+	color: #fff;
+	padding: 8px;
+}
+#footer-web .footer-link:hover{
+
+    transition: o.7s all;
+    cursor: pointer;
+    color: red;
+
+}
+#footer-web .footer-link-redes:hover{
+
+    background: rgba(23,19,11,0.4); 
+    cursor: pointer;
+    border-radius: 5px;
+    color: red;
+}
+#footer-web .footer-direct{
+
+	color: #fff;
+	padding: 18px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	background: rgba(23,19,11,0.4);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 650px){
+
+    #cabecalho .texto-header{
+
+    	display: none;
+    }
+
+    #cabecalho{
+
+     background-image: linear-gradient(to bottom right,#599,#557);
+    }
+
+}
+@media screen and (max-width: 819px){
+
+   #conteudo .card{
+
+     	width: 40%;
+     	margin:  0 auto;
+     	margin-bottom: 20px;
+
+     }
+
+}
+
+/* TABLET */
+@media screen and (min-width: 650px){
+ 
+	  #nav{
+
+		  display: block;
+		  right: 0;
+		  position: relative;
+	  }
+	  #nav #lista-nav{
+		  text-align: center; 
+		  margin: 0 auto;
+		  width: 70%;
+	  }
+	  #nav #lista-nav .link-nav{
+
+		border-bottom: none;
+		text-align: center;
+		display: inline-block;
+	  }
+	  .ativa-nav{
+
+       display: none;
+	  }
+	  
+     #conteudo .card{
+
+     	width: 30%;
+     	margin-bottom: 20px;
+
+	 }
+
+}
+@media screen and (min-width: 820px){
+
+ #conteudo .card{
+
+     	width: 30%;
+        display: inline-block;
+        margin-bottom: 20px;
+
+     }
+ #mensagem #formulario .input-msg{
+
+ 	width: 50%;
+
+ }
+ #mensagem .textarea-msg{
+
+   width: 50%;
+
+ }
+ #footer-web .footer-list-1{
+		
+	float: left;
+	width: 50%;
+
+}
+#footer-web .footer-list-2{
+		
+   width: 50%;
+   float: right;
+
+}
+
+}
+
